@@ -44,12 +44,16 @@ impl OpenSSLCrypto {
             CipherType::Aes128Cfb => symm::Type::AES_128_CFB128,
             #[cfg(feature = "cipher-aes-cfb1")]
             CipherType::Aes128Cfb1 => symm::Type::AES_128_CFB1,
+            #[cfg(feature = "cipher-aes-cfb8")]
+            CipherType::Aes128Cfb8 => symm::Type::AES_128_CFB8,
             #[cfg(feature = "cipher-aes-cfb128")]
             CipherType::Aes128Cfb128 => symm::Type::AES_128_CFB128,
             #[cfg(feature = "cipher-aes-cfb")]
             CipherType::Aes256Cfb => symm::Type::AES_256_CFB128,
             #[cfg(feature = "cipher-aes-cfb1")]
             CipherType::Aes256Cfb1 => symm::Type::AES_256_CFB1,
+            #[cfg(feature = "cipher-aes-cfb8")]
+            CipherType::Aes256Cfb8 => symm::Type::AES_256_CFB8,
             #[cfg(feature = "cipher-aes-cfb128")]
             CipherType::Aes256Cfb128 => symm::Type::AES_256_CFB128,
 

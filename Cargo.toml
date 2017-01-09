@@ -16,6 +16,7 @@ name = "shadowsocks"
 
 default = [
     "cipher-aes-cfb",
+    "cipher-aes-cfb8",
     "cipher-rc4",
 
     "cipher-chacha20",
@@ -23,6 +24,7 @@ default = [
 ]
 
 cipher-aes-cfb = []
+cipher-aes-cfb8 = []
 cipher-rc4 = []
 cipher-chacha20 = []
 cipher-salsa20 = []
